@@ -777,16 +777,72 @@ print(l)
 list = l[:3] + l[3:]
 print(list)
 ---------------------------------------------
+a,b = input().split()
+a = eval(a)
+b = eval(b)
+if a > b :
+    print('a is bigger than b')
+
+else:
+    print('a is smaller than b')
+----------------------------------------------------
+a = eval(input())
+if a % 2 == 0 :
+    print('even number')
+
+else:
+    print('odd number')
+---------------------------------------
+h,m,s = input().split(':')
+h = int(h)
+m = int(m)
+s = int(s)
+s += 37
+m += 15
+if s >= 60 :
+    s = s - 60
+    m += 1
+if m >= 60 :
+    m = m - 60
+    h += 1
+if h >= 24 :
+    h = 0
+
+print(h,m,s)
+---------------------------
+a = eval(input())
+if a >= 10000 :
+    a = a % 10000
+elif a >= 1000 :
+    a  = a % 1000
+elif a >= 100 :
+    a = a % 100
+else:
+    a = a % 10
+print(a)
+---------------------------------
+i = 1
+s = 0
+while i <= 2:
+    s= s + i
+    i = i + 1
+print(s)
+--------------------------
+st = input()
+i = 0
+while i < len(st) :
+
+    if 'a' <= st[i] <= 'z' :
+        print(st[i].upper(),end='')
+    else:
+        print(st[i],end='')
+
+    i += 1
+
+
+print('fuck you why you do not input')
+--------------------------------------
 
 '''
-
-
-
-
-
-
-
-
-
 
 
