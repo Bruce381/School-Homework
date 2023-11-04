@@ -846,3 +846,74 @@ print('fuck you why you do not input')
 '''
 
 
+# 1 Novenber 2023
+
+'''
+st = input()
+i = 0
+while i < len(st):
+    if 'a' <= st[i] <= 'z':
+        print(st[i].upper(), end='')
+    else:
+        print(st[i], end='')
+    i = i + 1
+------------------------------------
+#s = 1+1/(1+2)+1/(1+....+n)
+n = eval(input())
+s = 1
+t = 1
+for i in range(2,n+1):
+    t = t+i
+    s = s+1/t
+print(s)
+----------------------------------
+#s = 1+1/(1+3)+1/(1+....+n)
+n = eval(input())
+s = 1
+t = 1
+for i in range(2,n+1,2):
+    t = t+i
+    s = s+1/t
+print(s)
+------------------------------------
+from random import randint
+score = [randint(1,100) for i in range(50)]
+for i,s in enumerate(score):
+    if s >= 90 :
+        break
+print(i,s)
+-----------------------------------
+from  random import randint
+a = [randint(2,100000000) for i in range(10000000)]
+for i,v in enumerate(a):
+    j = 2
+    while j < v :
+        if v % j == 0 :
+            break
+        j = j + 1
+    else:
+        print('at {} is {}'.format(i,v))
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
