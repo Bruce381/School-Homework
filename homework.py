@@ -11,6 +11,7 @@ print (dict(d1))
 # This one can not work
 l = [1,2,3,4,5,6,7]
 d = {}
+d = set{}
 for a in l:
 
     dict[a] = 0
@@ -122,5 +123,162 @@ for i in a:
         c.add(i)
 print(c)
 '''
+import ast
+
+# 4 Noverber 2023
+# 44-56
+
+'''
+44
+a = 'abCdEfg'
+print(a.upper())
+print(a.lower())
+
+b = ''
+for i in a:
+    if 'a' <= i <= 'z' :
+        b += str.upper(i)
+    else:
+        b += str.lower(i)
+print(b)
+-------------------------------
+45
+a = 'abCdEfg'
+if 'A' <= a[0] <= 'Z' :
+    print('the first str is big letter')
+else:
+    print('the first str is not big letter')
+
+#/\#
+
+i don't know why this can not work(past
+
+i make it ohhhhhhh
+
+it can work now
+
+###
+
+def why_you_can_not_work():
+    if b != 0 and c == 0:
+        print('it is all small letter')
+    elif b == 0 and c != 0:
+        print('it is all big letter')
+    else:
+        print('they are not all big or small letter')
+
+
+a = 'abCdEfg'
+q = 0
+b = 0
+c = 0
+while q < len(a) :
+    if 'a' <= a[q] <= 'z' :
+        b = b + 1
+    else:
+        c = c + 1
+    q += 1
+
+print(why_you_can_not_work())
+
+--------------------
+46
+import string
+a = 'this is python'
+print(a.capitalize())
+print(string.capwords(a))
+------------------------------
+47
+a = 'this is python'
+a = a.split()
+
+if a[0] == 'this' and a[-1] == 'python':
+    print('aaa')
+----------------------------
+48
+a = 'this is python'
+a = a.split()
+
+print(a.count('is'))
+------------------
+49
+a = 'this is python'
+a = a.split()
+print(a.index('is'))
+-----------
+50
+a = 'this is python'
+print(a.split())
+----------------
+51
+光棍节就要到了，要不要给你介绍个 python 对象？
+
+a = 'blog.csdn.net/xufive/article/details/102946961'
+print(a.split('/'))
+--------------------
+52
+a = '2.72, 5, 7, 3.14'
+print(a.replace(',',','))
+print(ast.literal_eval(a))
+-------------
+53
+def why_you_can_not_work():
+    if b != 0 and c == 0:
+        print('it is all letter')
+    elif b == 0 and c != 0:
+        print('it is all number')
+    else:
+        print('i have no idea')
+
+
+a = 'adS12K56'
+q = 0
+b = 0
+c = 0
+while q < len(a) :
+    if 'a' <= a[q] <= 'z' :
+        b = b + 1
+    else:
+        c = c + 1
+    q += 1
+
+print(why_you_can_not_work())
+
+
+if a.isascii():
+    print(True)
+else:
+    print(False)
+-----------------------------------------
+54
+a = 'there is python'
+print(a.replace('is','are'))
+----------------
+55
+a =  '\t python \n'
+a = a.replace('\t','')
+a = a.replace('\n','')
+print(a)
+---------------------------------------
+56
+a = 'ok hello thank you'
+a = a.split()
+for i in a :
+    print(i)
+for b in a:
+    print("{:>10}".format(b))
+for c in a:
+    print("{:^10}".format(c))
+'''
+
+
+
+
+
+
+
+
+
+
 
 
