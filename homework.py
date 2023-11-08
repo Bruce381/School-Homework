@@ -123,7 +123,6 @@ for i in a:
         c.add(i)
 print(c)
 '''
-import ast
 
 # 4 Noverber 2023
 # 44-56
@@ -200,7 +199,7 @@ a = 'this is python'
 a = a.split()
 
 print(a.count('is'))
-------------------
+----------------------------
 49
 a = 'this is python'
 a = a.split()
@@ -269,7 +268,28 @@ for b in a:
     print("{:>10}".format(b))
 for c in a:
     print("{:^10}".format(c))
+----------------------------------
+57
+a = ['a','b','c']
+a = '|'.join(a)
+print(a)
 '''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
