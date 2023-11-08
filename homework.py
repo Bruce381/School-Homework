@@ -123,6 +123,7 @@ for i in a:
         c.add(i)
 print(c)
 '''
+import numpy
 
 # 4 Noverber 2023
 # 44-56
@@ -218,7 +219,8 @@ print(a.split('/'))
 52
 a = '2.72, 5, 7, 3.14'
 print(a.replace(',',','))
-print(ast.literal_eval(a))
+a = a.split(",")
+print(list(map(float,a)))
 -------------
 53
 def why_you_can_not_work():
@@ -287,7 +289,7 @@ print(a)
 
 
 
-
+import numpy
 
 
 
