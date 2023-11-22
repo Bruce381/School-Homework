@@ -897,7 +897,7 @@ for i,v in enumerate(a):
 
 
 # November 22 2023
-
+'''
 c = 0
 b = []
 while True :
@@ -917,11 +917,23 @@ print(c)
 print(b)
 print(f'mix{big},min{small}')
 
+'''
+
+import random
+num = random.randint(1,20)
+time = 1
+while time <= 5 :
+    a = int(input())
+
+    if a != num :
+        print('nope')
+    else:
+        print('good job')
+
+    time += 1
 
 
-
-
-
+print('nooooo!,you loose')
 
 
 
