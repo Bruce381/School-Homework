@@ -896,13 +896,26 @@ for i,v in enumerate(a):
 '''
 
 
+# November 22 2023
+
+c = 0
+b = []
+while True :
+    a = eval(input('yyy'))
+    if a != -1 :
+        b.append(a)
+        d = len(b)
+        c = (a + c)/d
+    else:
+        break
 
 
-
-
-
-
-
+b.sort()
+small = b[0]
+big = b[-1]
+print(c)
+print(b)
+print(f'mix{big},min{small}')
 
 
 
